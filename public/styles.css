@@ -1,0 +1,139 @@
+h1 {
+    text-align: center;
+    color: #e91e63;
+    margin-top: 20px;
+}
+
+body {
+    background-color: rgb(255, 218, 230);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0; 
+}
+
+.notebook {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; 
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+ 
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.date {
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e91e63;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #e91e63;
+    border: 2px solid #e91e63;
+}
+
+/* Style the custom checkbox when checked */
+input[type="checkbox"]:checked + .internal label {
+    text-decoration: line-through;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+}
+
+button {
+    padding: 10px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.date p {
+    margin: 0;
+    color: #000;
+    background-color: pink;
+    border-radius: 5px;
+}
+
+
+.notebook {
+    width: 100%;
+    max-width:fit-content;
+  ; 
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+ul {
+    margin: 10px 0;
+}
+
+
+footer {
+    background-color: #ffbdd3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}

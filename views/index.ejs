@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="notebook"> 
+            <div class="date">
+                <p><%= getCurrentDate(); %></p>
+            </div>
+            <form action="/submit" method="post">
+                <div class="input-container">
+                    <input type="text" name="submitData" placeholder="Add a new todo" required>
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+            
+            <ul>
+                <% if (locals.todos) {
+                    todos.forEach(todo => { %>
+                        <li>
+                            <input type="checkbox" name="todoItem" value="<%= todo %>">
+                            <div class="internal">
+                                <label><%= todo %></label>
+                            </div>
+                        </li>
+                    <% });
+                } %>
+            </ul>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>
+        copyright @2024
+        </p></footer>
+</html>
