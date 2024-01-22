@@ -6,7 +6,7 @@ const port=3000;
 app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: true }));
-let todos= [];
+
 function getCurrentDate() {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const today = new Date().toLocaleDateString('en-US', options);
@@ -14,6 +14,7 @@ function getCurrentDate() {
 }
 
 app.get("/", (req, res) => {
+   const todos= [];
     res.render("index.ejs", {todos, getCurrentDate});
   });
 
